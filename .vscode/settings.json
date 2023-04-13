@@ -1,0 +1,28 @@
+{
+	/* "eslint.options": {
+		"configFile": ".eslintrc.json"
+	}, */
+	"eslint.validate": ["javascript", "javascriptreact"],
+	"editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"prettier.tabWidth": 3,
+	"prettier.arrowParens": "avoid",
+	"prettier.useTabs": true,
+	"prettier.printWidth": 200,
+	"prettier.bracketSpacing": true,
+	"prettier.trailingComma": "es5",
+	"prettier.semi": false,
+	"prettier.singleQuote": false,
+	"editor.fontFamily": "Fira Code",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 16,
+	"editor.minimap.enabled": false,
+	"better-comments.tags": [
+		{
+			"tag": "!",
+			"color": "#FFa0a0",
+			"bold": true
+		}
+	]
+}
