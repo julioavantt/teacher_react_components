@@ -1,5 +1,4 @@
 export const Table = props => {
-	console.log(props)
 	return (
 		<table>
 			<thead>

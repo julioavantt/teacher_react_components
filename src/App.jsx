@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { v4 as uuid } from "uuid"
 
 import "./App.css"
@@ -11,11 +12,22 @@ export const listaOriginalProductos = [
 ]
 
 function App() {
+	const [showTable, setShowTable] = useState(true)
+
+	const handleButtonClose = () => setShowTable(false)
+	const handleButtonOpen = () => setShowTable(true)
+
 	return (
 		<div className="container">
 			<Header />
+			<span>SHOW TABLE VALE: {JSON.stringify(showTable)}</span>
+			<br />
+			<button onClick={handleButtonClose}>Ocultar lista</button>
+			<button onClick={handleButtonOpen}>Mostrar lista</button>
 			<main>
-				<Table listaOriginalProductos={listaOriginalProductos} />
+				{showTable && (
+					<Table listaOriginalProductos={listaOriginalProductos} />
+				)}
 			</main>
 		</div>
 	)
