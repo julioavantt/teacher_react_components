@@ -18,7 +18,7 @@
 -  🧑‍🏫 Creador de [Junior Pride](https://www.youtube.com/@juniorpride)
    <br>
 
-## Este repo trata sobre: Uso de la función createElement en React.
+## Este repo trata sobre: Uso de Components en React.
 
 -  Esta aplicación está creada con Create React App.
 -  Clonarla: git clone https://github.com/julioavantt/teacher_react_components.git
