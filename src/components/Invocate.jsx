@@ -1,4 +1,4 @@
-const StaticButton = () => <button>Alo</button>
+const StaticButton = () => <button>Alos</button>
 
 export const Invocate = () => {
 	return (

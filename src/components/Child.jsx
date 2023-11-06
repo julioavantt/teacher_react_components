@@ -1,1 +1,11 @@
-export const Child = props => <h4>{props.title}</h4>
+const GrandChild = ({ title }) => <button>{title}</button>
+
+export const Child = ({ title = "Manda el título wey", data }) => {
+	return (
+		<>
+			<h4>{title}</h4>
+			<p>{data}</p>
+			<GrandChild title={title} />
+		</>
+	)
+}

@@ -11,7 +11,8 @@ import { ComponentTypes } from "./components/ComponentTypes"
 import State from "./components/State"
 
 //! IMPORTS
-import { Name, Age } from "./components/NamedImport"
+import { Age, Name } from "./components/NamedImport"
+
 import DefaultImport from "./components/DefaultImport"
 
 function App() {

@@ -10,14 +10,24 @@ export const listaOriginalProductos = [
 ]
 
 function State() {
-	//!  state        setter              argument (es el valor del estado en 1er render)
+	//!     state        setter              argument (es el valor del estado en 1er render)
 	const [showTable, setShowTable] = useState(true)
+	const [count, setCount] = useState(10)
 
 	const handleButtonClose = () => setShowTable(false)
 	const handleButtonOpen = () => setShowTable(true)
 
 	return (
 		<div className="container">
+			<span>COUNT: {count}</span>
+			<button
+				onClick={() => {
+					setCount(prev => prev + 1)
+				}}
+			>
+				Agregar
+			</button>
+			<br></br>
 			<span>SHOW TABLE VALE: {JSON.stringify(showTable)}</span>
 			<br />
 			<button onClick={handleButtonClose}>Ocultar lista</button>
