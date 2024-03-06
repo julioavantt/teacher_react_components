@@ -3,7 +3,9 @@
 		"configFile": ".eslintrc.json"
 	}, */
 	"eslint.validate": ["javascript", "javascriptreact"],
-	"editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
 	"prettier.tabWidth": 3,

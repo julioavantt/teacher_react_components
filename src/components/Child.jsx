@@ -6,6 +6,7 @@ export const Child = ({ title = "Manda el título wey", data }) => {
 			<h4>{title}</h4>
 			<p>{data}</p>
 			<GrandChild title={title} />
+			<hr />
 		</>
 	)
 }
