@@ -3,15 +3,13 @@ export const Table = props => {
 		<table>
 			<thead>
 				<tr>
-					<th>ID</th>
 					<th>Nombre</th>
 					<th>Precio</th>
 				</tr>
 			</thead>
 			<tbody>
 				{props.listaOriginalProductos.map(producto => (
-					<tr key={producto.id}>
-						<td>{producto.id}</td>
+					<tr key={producto.producto}>
 						<td>{producto.producto}</td>
 						<td>{producto.precio}</td>
 					</tr>

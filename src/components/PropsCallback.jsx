@@ -1,7 +1,14 @@
-const ChildCallback = ({ click }) => <button onClick={click}>Clic</button>
+const ChildCallback = ({ property }) => {
+	console.log(property)
+	return <button onClick={property}>Clic</button>
+}
 
 export const PropsCallback = () => {
-	const handleClick = () => console.log(1)
+	const handleClick = () => alert(1)
 
-	return <ChildCallback click={handleClick} />
+	return <ChildCallback property={handleClick} />
 }
+
+const fn = () => ["a", "b"]
+
+const [a, b] = fn()

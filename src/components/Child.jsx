@@ -1,11 +1,13 @@
-const GrandChild = ({ title }) => <button>{title}</button>
+const Button = ({ buttonText, color }) => (
+	<button style={{ backgroundColor: color }}>{buttonText}</button>
+)
 
-export const Child = ({ title = "Manda el título wey", data }) => {
+export const Child = props => {
+	console.log(props)
 	return (
 		<>
-			<h4>{title}</h4>
-			<p>{data}</p>
-			<GrandChild title={title} />
+			<h4>{props.title}</h4>
+			<Button buttonText={props.buttonText} color={props.color} />
 			<hr />
 		</>
 	)

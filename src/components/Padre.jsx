@@ -3,9 +3,12 @@ import { Child } from "./Child"
 export const Father = () => {
 	return (
 		<>
-			<Child title="Título vía props" data="1fdefgrgrerg" />
-			<Child title="Otro título" data="2fdefgrgrerg" />
-			<Child data="fdefgrgrerg3" />
+			{Child({
+				title: " funcion normal",
+				buttonText: "Aceptar",
+				color: "red",
+			})}
+			<Child title="Elemento react" buttonText="Salir" color="green" />
 		</>
 	)
 }
