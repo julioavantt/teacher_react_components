@@ -22,7 +22,7 @@
 
 -  Esta aplicación está creada con Create React App.
 -  Clonarla: git clone https://github.com/julioavantt/teacher_react_components.git
--  Para iniciarla, luego de clonar, ejecute npm i para instalar dependencias y luego npm start para arrancar el servidor de desarrollo.
+-  Para iniciarla, luego de clonar, entre a la carpeta, ejecute npm i para instalar dependencias y luego npm start para arrancar el servidor de desarrollo.
 -  Observar el archivo src/App.js.
 -  Observar archivos carpeta src/components
 
